@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>check.svg</file>
+  </qresource>
+  <qresource prefix="logos">
+    <file>bookshelf.ico</file>
+  </qresource>
+</RCC>
