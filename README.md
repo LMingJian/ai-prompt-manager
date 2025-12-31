@@ -1,5 +1,7 @@
 # AI 提示词管理工具（AiPromptManager）
 
+@LMingJian 2025
+
 ## 前言
 
 这个工具是使用 Pyside6 用于练手的一个小项目，因此程序主要代码都在 `main.py` 这个文件里面，结构很简单的。
