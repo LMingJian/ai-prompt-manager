@@ -19,7 +19,7 @@ from PySide6.QtWidgets import (QApplication, QCheckBox, QGridLayout, QGroupBox,
     QHBoxLayout, QLabel, QLineEdit, QMainWindow,
     QPushButton, QScrollArea, QSizePolicy, QTextEdit,
     QVBoxLayout, QWidget)
-import resource_rc
+from codingQrc import resource_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.resize(1024, 768)
         icon = QIcon()
-        icon.addFile(u":/logos/bookshelf.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        icon.addFile(u":/logos/resources/bookshelf.ico", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
         MainWindow.setWindowIcon(icon)
         MainWindow.setStyleSheet(u"QMainWindow {\n"
 "background-color: #f5f7fa;\n"
@@ -89,7 +89,7 @@ class Ui_MainWindow(object):
 "    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,\n"
 "        stop: 0 #3498db, stop: 1 #2980b9);\n"
 "    border-color: #2980b9;\n"
-"    image: url(:/icons/check.svg);\n"
+"    image: url(:/icons/resources/check.svg);\n"
 "}\n"
 "\n"
 "QCheckBox::indicator:checked:hover {\n"
@@ -112,8 +112,8 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "QCheckBox::indicator:checked:disabled {\n"
-"    backg"
-                        "round-color: #bdc3c7;\n"
+""
+                        "    background-color: #bdc3c7;\n"
 "    border-color: #95a5a6;\n"
 "}\n"
 "\n"
@@ -189,7 +189,6 @@ class Ui_MainWindow(object):
         self.checkBoxWord = QCheckBox(self.centralwidget)
         self.checkBoxWord.setObjectName(u"checkBoxWord")
         self.checkBoxWord.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.checkBoxWord.setStyleSheet(u"")
         self.checkBoxWord.setChecked(True)
 
         self.horizontalLayout.addWidget(self.checkBoxWord)

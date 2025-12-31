@@ -9,8 +9,8 @@ from PySide6.QtWidgets import (QMainWindow, QHBoxLayout,
 from PySide6.QtCore import Qt, QMimeData, QThread, Signal, QObject, QPoint, Slot
 from PySide6.QtGui import QDrag, QFontMetrics
 
-from card_ui import Ui_WordCard
-from main_ui import Ui_MainWindow
+from codingUi.card_ui import Ui_WordCard
+from codingUi.main_ui import Ui_MainWindow
 
 DATA_FILE = "database.json"
 

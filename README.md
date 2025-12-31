@@ -1,4 +1,43 @@
-# README
+# AI 提示词管理工具（AiPromptManager）
+
+## 前言
+
+这个工具是使用 Pyside6 用于练手的一个小项目，因此程序主要代码都在 `main.py` 这个文件里面，结构很简单的。
+
+如果想要修改或者学习，可以先从 `designerUi` 这个文件夹开始，这个文件夹内存放这整个软件的所有界面设计文件，推荐直接使用 `QtDesigner` 进行打开。
+
+然后 `designerQrc` 是界面设计中用到的一些 LOGO 图片文件，`codingUi, codingQrc` 则是通过 `uic` 和 `rcc` 工具自动生成的代码文件。
+
+然后这里的数据为了简单，直接采用一个 JSON 文件做数据存储了，懒得搞数据库了，所以会在运行程序后，在程序当前位置生成一个 `database.json` 文件。
+
+最后，这个软件具备包括单词添加，句子构建，句子拖拽构建，句子分割，标签标记，搜索在内的简单功能。
+
+## 图示
+
+![img_0.png](images/img_0.png)
+
+![img_1.png](images/img_1.png)
+
+![img_2.png](images/img_2.png)
+
+![img_3.png](images/img_3.png)
+
+![img_4.png](images/img_4.png)
+
+![img_5.png](images/img_5.png)
+
+## 项目打包
+
+这里使用 nuitka 进行项目打包，请执行以下命令语句：
+
+```cmd
+python -m nuitka --onefile --standalone `
+--windows-icon-from-ico=resources/bookshelf.ico `
+--copyright=LL@LiangMingJian --product-name=AiPromptManager `
+--file-version=1.0 --file-description=AiPromptManager `
+--enable-plugin=pyside6 --windows-console-mode=disable `
+--output-filename=AiPromptManager.exe main.py
+```
 
 ## No.1
 
@@ -6,7 +45,7 @@
 
 因此，需要先在终端中切换编码为 UTF-8，然后才能进行转换。
 
-```commandline
+```cmd
 chcp 65001
 pyside6-uic.exe main.ui -o main_ui.py
 ```

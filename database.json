@@ -1,0 +1,69 @@
+{
+    "sentences": {
+        "masterpiece,best quality,high quality,newest,highres,8K,HDR,absurdres,": {
+            "id": 1767087684.1608615,
+            "note": "默认的质量提示",
+            "sentence": "masterpiece,best quality,high quality,newest,highres,8K,HDR,absurdres,",
+            "tags": [
+                "qc"
+            ],
+            "translation": ""
+        }
+    },
+    "words": {
+        "absurdres": {
+            "id": 1767087651.8259928,
+            "note": "",
+            "tags": [
+                "qc"
+            ],
+            "translation": "超高分辨率",
+            "word": "absurdres"
+        },
+        "best quality": {
+            "id": 1767087667.706208,
+            "note": "",
+            "tags": [
+                "qc"
+            ],
+            "translation": "最佳质量",
+            "word": "best quality"
+        },
+        "close_up": {
+            "id": 1767087707.852107,
+            "note": "",
+            "tags": [
+                "cam"
+            ],
+            "translation": "特写",
+            "word": "close_up"
+        },
+        "from below": {
+            "id": 1767087742.974522,
+            "note": "",
+            "tags": [
+                "cam"
+            ],
+            "translation": "從下拍攝",
+            "word": "from below"
+        },
+        "masterpiece": {
+            "id": 1767087675.7994332,
+            "note": "",
+            "tags": [
+                "qc"
+            ],
+            "translation": "杰作",
+            "word": "masterpiece"
+        },
+        "pov": {
+            "id": 1767087729.2628522,
+            "note": "",
+            "tags": [
+                "cam"
+            ],
+            "translation": "主角视角",
+            "word": "pov"
+        }
+    }
+}

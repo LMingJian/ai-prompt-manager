@@ -1,8 +1,8 @@
 <RCC>
   <qresource prefix="icons">
-    <file>check.svg</file>
+    <file>../resources/check.svg</file>
   </qresource>
   <qresource prefix="logos">
-    <file>bookshelf.ico</file>
+    <file>../resources/bookshelf.ico</file>
   </qresource>
 </RCC>

@@ -14,8 +14,8 @@
    <string>AI 词库管理工具</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="resource.qrc">
-    <normaloff>:/logos/bookshelf.ico</normaloff>:/logos/bookshelf.ico</iconset>
+   <iconset resource="../designerQrc/resource.qrc">
+    <normaloff>:/logos/resources/bookshelf.ico</normaloff>:/logos/resources/bookshelf.ico</iconset>
   </property>
   <property name="styleSheet">
    <string notr="true">QMainWindow {
@@ -77,7 +77,7 @@ QCheckBox::indicator:checked {
     background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
         stop: 0 #3498db, stop: 1 #2980b9);
     border-color: #2980b9;
-    image: url(:/icons/check.svg);
+    image: url(:/icons/resources/check.svg);
 }
 
 QCheckBox::indicator:checked:hover {
@@ -230,9 +230,6 @@ background-color: #ffffff;
            <widget class="QCheckBox" name="checkBoxWord">
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true"/>
             </property>
             <property name="text">
              <string>单词库</string>
@@ -529,7 +526,7 @@ color: #3498db;
   </widget>
  </widget>
  <resources>
-  <include location="resource.qrc"/>
+  <include location="../designerQrc/resource.qrc"/>
  </resources>
  <connections/>
 </ui>
